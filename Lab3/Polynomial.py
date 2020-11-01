@@ -53,13 +53,21 @@ class Polynomial:
         q = Polynomial.find_divisors(self.factors[0])
         potential_solutions = [x/y for x in p for y in q]
         potential_solutions = list(set(potential_solutions))
-        # solutions = [x for x in potential_solutions if self.check_if_number_is_solution]
         solutions = []
         for x in potential_solutions:
             if Polynomial.check_if_number_is_solution(self.factors, x) is True:
                 solutions.append(x)
         print(solutions)
         return solutions
+
+    def get_value(self, x):
+        sum = 0
+        help_poly = self.factors.copy()
+        help_poly.reverse()
+        for index, elem in enumerate(help_poly):
+            sum += elem * (x ** index)
+
+        return sum
 
     @staticmethod
     def check_if_number_is_solution(factors, number):
@@ -196,5 +204,6 @@ print(bool(polynomial_empty2))
 print()
 polynomial6 = Polynomial([1, 0, -1])
 polynomial6.find_integer_solution()
+print(polynomial6.get_value(5))
 
 
