@@ -2,7 +2,7 @@ import os
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
 
-class TxtFileHandler:
+class TxtFileHandler:   # ta klasa ma właściwie tylko metody statyczne
     path = os.getcwd()
 
     def __init__(self):
@@ -19,7 +19,7 @@ class TxtFileHandler:
         return text
 
     @staticmethod
-    def tokenize_txt_file(txt_file):
+    def tokenize_txt_file(txt_file):    # to w ogóle nie są generatory
         tokenized_text = word_tokenize(txt_file)
         print(tokenized_text)
 

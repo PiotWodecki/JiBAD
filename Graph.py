@@ -7,8 +7,8 @@ class Graph:
             self.graph = dict()
 
     @staticmethod
-    def add_vertex(self, node):
-        if node not in self.graph.keys():
+    def add_vertex(self, node): # to nie może być metoda statyczna
+        if node not in self.graph.keys():   # równoważne node not in self.graph - używać wg. uznania
             self.graph[node] = []
 
     def delete_vertex(self, node):
@@ -34,8 +34,8 @@ class Graph:
                 return self.graph[node]
 
         except:
-            "error"
-
+            "error" # ucisza Pan wszystkie wyjątki; nie wolno robić czegoś takiego bez b. dobrego powodu (a b. dobry powód wymaga komentarza)
+# brak DFS i BFS
 
 graph = Graph()
 graph.add_vertex(graph, 'A')
