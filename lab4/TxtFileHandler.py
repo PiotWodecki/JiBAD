@@ -4,12 +4,12 @@ from collections import defaultdict
 def generate_tokens_from_txt(filename):
     tokens = []
     with open(filename, encoding='utf-8') as infile:
-        infile = "".join(line for line in infile if not line.isspace())
-        infile = ''.join(c for c in infile if c not in """,.?!-;()"'""")
+        infile = "".join(line for line in infile if not line.isspace()) # trzeba cały plik wczytywać do pamięci? od tej pory nazwa infile się robi myląca
+        infile = ''.join(c for c in infile if c not in """,.?!-;()"'""")   # łącznik (-) akurat lepiej zamieniać na spację niż usuwać, vide: biało-czerwona
         for line in infile.split():
-            for token in line.split():
+            for token in line.split():  # ten split już nic nie podzieli
                 tokens.append(token.lower())
-
+        # równoważnie: tokens = infile.lower().split()
     return tokens
 
 def count_words(tokens):
@@ -29,7 +29,7 @@ def generate_digram(tokens):
     two_words = sorted(two_words.items(), key=lambda x: x[1], reverse=True)
     return two_words
 
-def generate_trigram(tokens):
+def generate_trigram(tokens):   # nie da się tego uogólnić na n-gramy?
     three_words = defaultdict(int)
     for index in range(len(tokens) - 2):
         three_words[tokens[index] + " " + tokens[index + 1] + " " + tokens[index + 2]] += 1
