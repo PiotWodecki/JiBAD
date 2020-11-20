@@ -10,7 +10,7 @@ def get_non_negative_int(prompt):
             print("Enter value which is greater than 0")
             continue
         else:
-            break
+            break   # tutaj by mógł być ten return
     return value
 
 
@@ -30,14 +30,14 @@ def ask_for_integer_input(number_of_parameters = 2):
     i = 0
     while i < number_of_parameters:
         values.append(get_non_negative_int(prompt + str(i + 1) + ": "))
-        i = i + 1
+        i = i + 1   # +=
 
     return values
 
 
-def handler(parameters=2):
+def handler(parameters=2):  # mało czytelna nazwa
     values = ask_for_integer_input(parameters)
-    if len(values) == parameters:
+    if len(values) == parameters:   # to sprawdzenie chyba jest nadmiarowe
         print(get_nwd(*values))
     else:
         raise ValueError

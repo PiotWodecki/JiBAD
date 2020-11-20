@@ -1,7 +1,7 @@
 import string
 
 
-class Automat:
+class Automat:  # Automaton
 
     def __init__(self):
         self.state = "q0"
@@ -25,10 +25,10 @@ class Automat:
     def state_q0_handler(self, character):
         if character == '(':
             self.state = "q0"
-            self.counter = self.counter + 1
+            self.counter = self.counter + 1 # +=
         elif character == '~':
             self.state = "q0"
-        elif character in set(string.ascii_lowercase) or character == '1' or character == '0':
+        elif character in set(string.ascii_lowercase) or character == '1' or character == '0':  # nie lepiej stworzyć ten zbiór wcześniej i dodać do niego 0 i 1? Operator in działa też dla napisów
             self.state = "q1"
         else:
             self.state = "Reject"
@@ -80,5 +80,6 @@ print(automat.check_expression("a|&b"))
 print(automat.check_expression("b~"))
 print(automat.check_expression("(a|b"))
 print(automat.check_expression("a|b)"))
+print(automat.check_expression("a)|(b"))
 
 
