@@ -314,7 +314,7 @@ This program allows you to make basic operations on shapes. Please follow the in
 Instructions:
 add <figure> <name> <size>
 remove <name>
-move <name> <vector>
+move <name> <vector> - for example (x,y)
 scale <name> <ratio>
 rotate <name> <angle> - does not involve circle
 set border color <name> <color>
