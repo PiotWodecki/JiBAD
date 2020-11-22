@@ -9,8 +9,8 @@ class Circle(Shape):
         self. rotation = 0
 
     def __repr__(self):
-        return "Object: {}\nName: {}\nSize: {}\nCenter: {}\nRotation: {}\nBorder color: {}\n" \
-               "Background color: {}".format(self.__class__.__name__, self.name, self.size_radius, self.center, self.rotation,
+        return "Object: {}\nName: {}\nSize: {}\nCenter: {}\nRotation: None\nBorder color: {}\n" \
+               "Background color: {}".format(self.__class__.__name__, self.name, self.size_radius, self.center,
                                              self.border_color, self.background_color)
 
 

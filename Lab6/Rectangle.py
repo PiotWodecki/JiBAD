@@ -10,5 +10,5 @@ class Rectangle(Shape):
 
     def __repr__(self):
         return "Object: {}\nName: {}\nSize a: {}\nSize_b: {}\nCenter: {}\nRotation: {}\nBorder color: {}\n" \
-               "Background color: {}".format(self.__class__.__name__, self.name, self.size_a, self.size_b, self.center, self.rotation,
+               "Background color: {}".format(self.__class__.__name__, self.name, self.size_a, self.size_b, self.center, self.rotation % 360,
                                              self.border_color, self.background_color)

@@ -12,5 +12,5 @@ class Triangle(Shape):
     def __repr__(self):
         return "Object: {}\nName: {}\nSize a: {}\nSize_b: {}\nSize_c: {}\nCenter: {}\nRotation: {}\nBorder color: {}\n" \
                "Background color: {}".format(self.__class__.__name__, self.name, self.size_a, self.size_b,self.size_c,
-                                             self.center, self.rotation,
+                                             self.center, self.rotation % 360,
                                              self.border_color, self.background_color)
