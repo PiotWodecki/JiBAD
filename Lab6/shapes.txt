@@ -1,17 +1,21 @@
-c1
-Object: Circle
-Name: c1
-Size: 10
+t1
+Object: Triangle
+Name: t1
+Size a: 1
+Size_b: 1
+Size_c: 1
 Center: (0, 0)
 Rotation: 0
 Border color: None
 Background color: None
+
 s1
 Object: Square
 Name: s1
-Size: 12
-Center: (0, 0)
+Size: 4
+Center: (1.0, 2.0)
 Rotation: 0
-Border color: None
+Border color: green
 Background color: None
+
 

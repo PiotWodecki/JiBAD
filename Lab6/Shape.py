@@ -7,7 +7,7 @@ class Shape:
         self.name = name
         self.center = Vector(0, 0)
         self.rotation = 0
-        self.background_color = None
+        self.background_color = None    # nieprawidłowy kolor
         self.border_color = None
 
     def __repr__(self):

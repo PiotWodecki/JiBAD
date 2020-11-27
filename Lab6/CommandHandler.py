@@ -57,7 +57,7 @@ class CommandHandler:
                         CommandHandler.handle_parameters(self, command)
                 else:
                     raise ValueError
-            except ValueError:
+            except ValueError:  # dopiero co Pan rzucił ten wyjątek
                 print("Command is incorrect")
 
     def handle_parameters(self, command):
@@ -73,7 +73,7 @@ class CommandHandler:
         elif instruction == "rotate":
             CommandHandler.handle_rotate_command(self, command)
         elif instruction == "set":
-            if ' '.join(command.split()[:3]) == "set border color" or ' '.join(command.split()[:3]) == "set background color":
+            if ' '.join(command.split()[:3]) == "set border color" or ' '.join(command.split()[:3]) == "set background color":  # dwa razy wykonywana ta sama operacja; polecam operator in
                 CommandHandler.handle_setting_border_color(self, command)
         else:
             raise ValueError
@@ -160,8 +160,8 @@ class CommandHandler:
         if float(size) > 0:
             shape = self.shapes_dict[command[1]]
             if type(shape) is Circle:
-                shape.size_radius = float(shape.size_radius) * float(size)
-            elif type(shape) is Square:
+                shape.size_radius = float(shape.size_radius) * float(size)  # czy promień koła może nie być float'em?
+            elif type(shape) is Square: # właśnie na takie okazje mamy dziedziczenie i polimorfizm
                 shape.size_a = float(shape.size_a) * float(size)
             elif type(shape) is Rectangle:
                 shape.size_a = float(shape.size_a) * float(size)
@@ -302,7 +302,7 @@ class CommandHandler:
 
     @staticmethod
     def check_triangle_validity(a, b, c):
-        if (a + b <= c) or (a + c <= b) or (b + c <= a):
+        if (a + b <= c) or (a + c <= b) or (b + c <= a):    # można pisać return warunek
             return False
         else:
             return True
