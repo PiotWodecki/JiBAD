@@ -1,6 +1,6 @@
-from CommonUtils import *
+from CommonUtils import *   # nie należy tak imprtować
 
-class Equation:
+class Equation: # po co klasa jeśli ma tylko metody statyczne?
 
     @staticmethod
     def solve_equation(x_square_parameter, x_parameter, constant):
@@ -19,14 +19,14 @@ class Equation:
                             if x_parameter == 0:
                                 raise ZeroDivisionError
                             else:
-                                return [-constant / x_parameter]
+                                return [-constant / x_parameter]    # to dzielenie samo rzuci ZeroDivisionError, jeśli będzie potrzeba
                     else:
                             return Equation.calculate_roots(x_square_parameter, x_parameter, constant)
                 else:
                     raise ValueError
-        except ValueError:
+        except ValueError:  # rzuca Pan wyjątek, żeby go za chwilę złapać
             if x_parameter == 0:
-                raise ZeroDivisionError
+                raise ZeroDivisionError # ten wyjątek nie zostanie obsłużony; o to chodziło?
             else:
                 return ["Incorrect input"]
 

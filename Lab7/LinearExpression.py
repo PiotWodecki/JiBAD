@@ -18,7 +18,7 @@ class LinearExpression:
 
         except ZeroDivisionError:
             if first_point_y != second_point_y:
-                return ["Cannot create a function from this points"]
+                return ["Cannot create a function from this points"]    # Przez punkty (1,0) i (1,1) nie biegnie prosta?
             else:
                 return ["Two identical points - it is impossible to create linear expression"]
         except ValueError:
