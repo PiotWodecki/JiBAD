@@ -15,7 +15,7 @@ class Perceptron:
         else:
             return 0
 
-    def train_perceptron(self, data,  max_iter=500, learning_rate=0.1):
+    def train_perceptron(self, data,  max_iter=100, learning_rate=0.1):
         for i in range(max_iter):
             error_counter = 0
 

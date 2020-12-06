@@ -17,9 +17,11 @@ def main():
 
     data_sample_3 = CsvFileStorage()
     data_sample_3.read_csv_file('sample3.csv')
+    train_sample, test_sample= data_sample_3.split_data_to_train_and_test()
     perceptron_sample_3 = Perceptron(data_sample_3.description_row.shape[1])
+    perceptron_sample_3.train_perceptron(train_sample)
+    perceptron_sample_3.test_perceptron(test_sample)
     perceptron_sample_3.train_perceptron(data_sample_3)
-    perceptron_sample_3.test_perceptron(data_sample_3)
 
 
 if __name__ == "__main__":

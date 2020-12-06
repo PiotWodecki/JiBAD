@@ -32,3 +32,11 @@ class CsvFileStorage:
             self.description_row[i, :] = (self.description_row[i, :] - self.description_row[i, :].min())/\
                                          (self.description_row[i, :].max() - self.description_row[i, :].min())
 
+    def split_data_to_train_and_test(self, training_size=0.75):
+        train_data = self.description_row[0: round(training_size * np.shape(self.description_row)[0]), :]
+        train_label = self.label[0: round(training_size * np.shape(self.description_row)[0])]
+
+        test_data = self.description_row[round(training_size * np.shape(self.description_row)[0]): np.shape(self.description_row)[0], :]
+        test_label = self.label[round(training_size * np.shape(self.description_row)[0]): np.shape(self.description_row)[0]]
+
+        return CsvFileStorage(train_data, train_label), CsvFileStorage(test_data, test_label)
