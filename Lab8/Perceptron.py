@@ -8,7 +8,7 @@ class Perceptron:
         self.threshold = 0
 
     def predict_value(self, row):
-        predicted_value = np.matmul(self.weights.T, row) + self.threshold
+        predicted_value = np.matmul(self.weights.T, row) + self.threshold   # jeśli + to raczej bias
 
         if predicted_value > 0:
             return 1
