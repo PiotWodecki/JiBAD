@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def merge_data_frames(*dataframes):
-    dfs = list(dataframes)
+    dfs = list(dataframes)  # czy ta konwersja jest do czegokolwiek potrzebna?
     df = pd.concat(dfs)
     return df
 
@@ -19,7 +19,7 @@ def draw_plot_for_generator(df, generator_key, start_date, end_date):
     plt.xlabel('Date Time')
     plt.ylabel('AC POWER')
 
-    def draw_average_power_for_generator_on_existing_plot(dataframe):
+    def draw_average_power_for_generator_on_existing_plot(dataframe):   # długa i myląca nazwa
         plot2_df = dataframe.copy()
         plot2_df = plot2_df.set_index(['DATE_TIME'])
         plot2_df = plot2_df.loc[start_date:end_date]
@@ -27,7 +27,7 @@ def draw_plot_for_generator(df, generator_key, start_date, end_date):
 
         return means
 
-    means_for_each_generator = draw_average_power_for_generator_on_existing_plot(df)
+    means_for_each_generator = draw_average_power_for_generator_on_existing_plot(df)    # myląca nazwa zmiennej
     plt.plot(means_for_each_generator['AC_POWER'], color='red', label="Mean for all generator")
     plt.legend()
     plt.show()
@@ -46,7 +46,7 @@ def check_if_power_was_under_the_mean(dataframe, difference=0.8):
 
 
 def check_generator_with_the_most_occurence_under_the_average_power(dataframe, col_name='Is under mean'):
-    df_with_true_occurences = dataframe[dataframe[col_name] == True]
+    df_with_true_occurences = dataframe[dataframe[col_name] == True]    # == True jest nadmiarowe
     gen = df_with_true_occurences.groupby('SOURCE_KEY')['AC_POWER'].count().idxmax()
     return gen
 
