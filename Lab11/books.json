@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0b3e06e1-8119-4368-bb8e-3129e6ab4213",
+    "title": "Ogniem i mieczem",
+    "author": "Pan pawel",
+    "year_of_publishment": 1200,
+    "loan": false
+  },
+  {
+    "id": "03cea6d3-b573-4eaa-a8f8-91c0ad67fbca",
+    "title": "Ogniem i mieczem2",
+    "author": "Pan pawel2",
+    "year_of_publishment": 1300,
+    "loan": false
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Piotr6",
+    "surname": "Woda",
+    "login": "wdck",
+    "password": "admin",
+    "is_employee": false
+  },
+  {
+    "name": "Piotr2",
+    "surname": "Woda",
+    "login": "wdck2",
+    "password": "admin",
+    "is_employee": false
+  },
+  {
+    "name": "Piotr3",
+    "surname": "Woda3",
+    "login": "wdck3",
+    "password": "admin",
+    "is_employee": true
+  }
+]
