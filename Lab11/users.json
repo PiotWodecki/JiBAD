@@ -1,23 +1,79 @@
 [
   {
-    "name": "Piotr6",
-    "surname": "Woda",
-    "login": "wdck",
-    "password": "admin",
-    "is_employee": false
+    "name": "Alfred",
+    "surname": "Kokos",
+    "login": "kokos",
+    "is_employee": false,
+    "passwordhashed": "9055ef5ec9badb7e646e909c539c6c91531fbe232ec3acbaa69ff7e70e7a8c02f04b599f9d10d615722940a84fb74e26f4845ee0c5a861c7b2f3406da4c112d2f5e8c85e75f069e3dd5c85f83ffa1d2137ee03ee1cc351df4d813dc5a7ea8639"
   },
   {
-    "name": "Piotr2",
-    "surname": "Woda",
-    "login": "wdck2",
-    "password": "admin",
-    "is_employee": false
+    "name": "Witold",
+    "surname": "Gombrowicz",
+    "login": "geba",
+    "is_employee": false,
+    "passwordhashed": "c0585bd482050ffa365202c483428d1b9a5c5628bfb542f0948911e7b6e18c995c8afa96b5343483df2e835559796fd189a530299d2894914f8e36850bc20969c3aeebbd00173c4066a0d4fe26ecce8ba2c603f2c2cb2f2a59dc9c31ec1a88dc"
   },
   {
-    "name": "Piotr3",
-    "surname": "Woda3",
-    "login": "wdck3",
-    "password": "admin",
-    "is_employee": true
+    "name": "Pani",
+    "surname": "Pracowniczka",
+    "login": "adminka",
+    "is_employee": true,
+    "passwordhashed": "c18f628f94e821e19c6253ef66e7841bfb628e15f17d10717898cebc13c7146a48ab12a7763a5d44405318399b6c845656766dea4cbd1e8aaf3252fc5a9961a8ed62400aaafc4897f4f46df7e3c3570465f100ae73c15db9b52891f305f7b257"
+  },
+  {
+    "name": "Nowy",
+    "surname": "Czytelnik",
+    "login": "Nowy",
+    "is_employee": false,
+    "passwordhashed": "2c85398405ae493a6752c4174b20b166f828162ae222e5bb70dbdb3c5991611fe4f8550ae15f50564366a241946cae001f2d962b3cde78d81a30124506373a03de8e3cae2ad309a7579f230328f1e08b88c20786c10d503066b10fe70306dca3"
+  },
+  {
+    "name": "Piotr",
+    "surname": "Wodecki",
+    "login": "login",
+    "is_employee": false,
+    "passwordhashed": "f4f6f5ca9bab3b1c07968f4b4eb71aa8b318634454ce3c30e20c777e33f8584ab160b945e6955fadfbf0554ce4b4646584b88caa1a22f0ef7cc05fe5daa6a19ea786299a8725392701e4a46459626b5c2f705e47066578b6dcd137a618c0bf10"
+  },
+  {
+    "name": "Nowy",
+    "surname": "Uzytkownik",
+    "login": "uzytk",
+    "is_employee": false,
+    "passwordhashed": "fd394410de4f67e79bff859dc7ed69c555544a65fc0157e5a3c789f029170a4986201aeefcc1048531c225699cc69044dbb34cffdfe39d63e100f3e148e7fa6b80505dc8fb02b085aaedc23e8be207c0c45a96c5646517494720f47669efd93b"
+  },
+  {
+    "name": "Pracus",
+    "surname": "Smerf",
+    "login": "pracownik",
+    "is_employee": true,
+    "passwordhashed": "e947fde4ab0317c1356f9da884de3a3434846db3c2e33c445b700d188cce0a7bb873823758599acb4a953af298848a9d31d58a75fa4d9bf98cf587362c3d10132e9fa252ab747b5f816081c416d3322f5741c4b9f2fc5a52988b5784b93e5496"
+  },
+  {
+    "name": "Atom",
+    "surname": "Owka",
+    "login": "atomowka",
+    "is_employee": false,
+    "passwordhashed": "8abee01e0c16640b3d7aeffe9372a4d21e610c5af6202b899b496a8e79f8ed5b05e786086aae23995424320cdb8dfc7c2eb5d8991f52d7f5b13ebcfc86b655917891aaf72288477cab880aae7f205f46552bd0241e8b524cffb6c3d78f0d10bd"
+  },
+  {
+    "name": "Names",
+    "surname": "Surnames",
+    "login": "Logins",
+    "is_employee": false,
+    "passwordhashed": "a7e7f41011765863ddd197845e250b82c953d9dd22dfc360af0492c868e208095bba0e54d243d0a362d7e00bd7d3c520f4ad7c5fe05bd024fb67ba38a71847e50c3f048bcb7f9051e91894d54980c6339912829959062de9799e56623b2b6d91"
+  },
+  {
+    "name": "Haslo",
+    "surname": "Haslo",
+    "login": "haslo",
+    "is_employee": false,
+    "passwordhashed": "5733c9343cfb9c2dc1f00361f8d542a7efbfb8049b1ab79bf9687e0594bc242b78c8ea0d480e611866d19874522b23e7c880e903a120be2dba9311aaa6dd5a3a6e8af2e9d667512ba10dc32e17b53af14e4f7fbd281ffeb34df20e965800e7d0"
+  },
+  {
+    "name": "Haslo",
+    "surname": "Haslo",
+    "login": "hasloP",
+    "is_employee": true,
+    "passwordhashed": "ff464a5395aa44439582c1d9712155aab6e82d76b443640ff3dbd8db50a3eb8ceec90f48cb3f100697916360b18035294762cfa54621d0ce18b2e69dd770710cf613fc0dadd05f5f16b45eabcddceb8d865508fda770b339a5ac8d3c5e940cb0"
   }
 ]

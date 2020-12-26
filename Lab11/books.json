@@ -1,16 +1,44 @@
 [
   {
-    "id": "0b3e06e1-8119-4368-bb8e-3129e6ab4213",
+    "id": "146e3a71-a755-4dda-a7d5-272ca91f03b4",
     "title": "Ogniem i mieczem",
     "author": "Pan pawel",
-    "year_of_publishment": 1200,
+    "year_of_publishment": 1900,
     "loan": false
   },
   {
-    "id": "03cea6d3-b573-4eaa-a8f8-91c0ad67fbca",
+    "id": "18142c6a-8811-4d00-91f8-e35f5167820c",
     "title": "Ogniem i mieczem2",
-    "author": "Pan pawel2",
-    "year_of_publishment": 1300,
+    "author": "Henryk Sienkiewicz",
+    "year_of_publishment": 1932,
+    "loan": false
+  },
+  {
+    "id": "466b429b-7f04-4865-b53c-547ac897218d",
+    "title": "Mieczem i szabl\u0105",
+    "author": "Senryk Hienkiewicz",
+    "year_of_publishment": 2007,
+    "loan": false
+  },
+  {
+    "id": "1df2710f-b056-49c0-9f86-5cbbfdb18254",
+    "title": "Piescia i noga",
+    "author": "Pan autor",
+    "year_of_publishment": 1821,
+    "loan": false
+  },
+  {
+    "id": "61014daf-e5f0-45b4-aafb-f7557e24c8f4",
+    "title": "Piescia i noga",
+    "author": "Pan autor",
+    "year_of_publishment": 1829,
+    "loan": false
+  },
+  {
+    "id": "7656b3fc-ab96-49b7-8f4f-e00d67c0319d",
+    "title": "Piescia i noga",
+    "author": "Pan autor",
+    "year_of_publishment": 1826,
     "loan": false
   }
 ]

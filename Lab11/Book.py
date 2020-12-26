@@ -1,5 +1,5 @@
 import random
-from uuid import uuid4
+from uuid import uuid4 #taki id jest lepszy niż generowany przez użytkownika
 
 
 class Book:
