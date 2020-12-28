@@ -28,7 +28,7 @@ def get_cmap(n, name='hsv'): #rozwiązanie pochodzi ze stackoverflow (do losowan
     return plt.cm.get_cmap(name, n)
 
 
-def draw_plots_ac_or_dc_power(df, main_generators_id, main_generators_id2, generators_to_compare_ids, start_date, end_date, ac_or_dc='AC_POWER'):
+def draw_plots_ac_or_dc_power(df, main_generators_id, main_generators_id2, generators_to_compare_ids, start_date, end_date, ac_or_dc='AC_POWER'):   # dużo parametrów
     #ta metoda nie jest najlepiej napisana, ale miałem problemy ze znalezieniem błędu :(
     plot_df = df.copy()
     plot_df = plot_df.loc[df['SOURCE_KEY'] == main_generators_id]
@@ -48,7 +48,7 @@ def draw_plots_ac_or_dc_power(df, main_generators_id, main_generators_id2, gener
     plt.plot(new_plot_df['DATE_TIME'],new_plot_df[ac_or_dc], color='red', linewidth=2, label="Generator: {}".format(main_generators_id2))
 
     if len(generators_to_compare_ids) != 4:
-        pass
+        pass    # co tu powinno być?
     else:
         for i in range(4):
             new_plot_df = df.copy()
@@ -70,7 +70,7 @@ def draw_yield_figure(dataframe, generator_id):
     df = compare_daily_yield_to_average(dataframe, generator_id)
     ratio_under_75 = (df['Gen-avg ratio'] < 0.75).sum()
     ratio_75_85 = ((df['Gen-avg ratio'] >= 0.75) & (df['Gen-avg ratio'] < 0.85)).sum()
-    ratio_85_95 = ((df['Gen-avg ratio'] >= 0.85) & (df['Gen-avg ratio'] < 0.95)).sum()
+    ratio_85_95 = ((df['Gen-avg ratio'] >= 0.85) & (df['Gen-avg ratio'] < 0.95)).sum()  # DRY
     ratio_95_105 = ((df['Gen-avg ratio'] >= 0.95) & (df['Gen-avg ratio'] < 1.05)).sum()
     ratio_105_115 = ((df['Gen-avg ratio'] >= 1.05) & (df['Gen-avg ratio'] < 1.15)).sum()
     ratio_115_125 = ((df['Gen-avg ratio'] >= 1.15) & (df['Gen-avg ratio'] < 1.25)).sum()
