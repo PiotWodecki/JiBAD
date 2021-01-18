@@ -12,7 +12,7 @@ class Book:
         self.loan = False
 
 
-def uniqueid():
+def uniqueid(): # to nie jest nigdzie używane
     seed = random.getrandbits(32)
     while True:
         yield seed

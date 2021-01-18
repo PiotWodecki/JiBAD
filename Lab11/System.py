@@ -253,7 +253,7 @@ class System:
         self.state = 'logged_employee'
 
     def handle_returning_book_screen(self):
-        guid = user_input_book_guid()
+        guid = user_input_book_guid()   # pomieszanie logiki z interfejsem
         for d in self.books:
             if d['id'] == guid:
                 if d['loan']:

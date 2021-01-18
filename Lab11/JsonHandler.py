@@ -9,7 +9,7 @@ def serialize_user_to_json(user):
         json.dump(user, f, indent=2, default=encoder_user)
 
 
-def serialize_book_to_json(book):
+def serialize_book_to_json(book):   # pojedynczą książkę?
     with open('books.json', 'w') as f:
         json.dump(book, f, indent=2, default=encoder_book)
 
